@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+*:focus {
+    outline: none;
+}
+
+.navBar {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.searchSection,
+.notFoundSection {
+    background-color: rgb(248, 248, 248);
+}
+
+.notFoundSection .text {
+    padding: 2rem 0px;
+}
+
+.mainContainer {
+    display: flex;
+    width: 100%;
+}
+
+.leftContainer {
+    margin-right: 10px;
+    width: 20%;
+    background-color: antiquewhite;
+}
+
+.rightContainer {
+    /* background-color: azure; */
+    width: 100%;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    width: 100%;
+}
+
+article span {
+    background-color: aquamarine;
+    padding: 4px;
+    font-size: 11px;
+    border-radius: 5px;
+}
+
+article .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+article a {
+    color: rgb(102, 102, 102);
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.footer button {
+    background: none;
+    border: none;
+    background-color: rgb(197, 233, 233);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.footer button:hover {
+    background-color: #000;
+    cursor: pointer;
+    color: white;
+}
+
+article .top .delete-icon {
+    color: red;
+}
+
+article .top .delete-icon:hover {
+    cursor: pointer;
+}
+
+.searchContainer {
+    padding: 4rem 0px;
+}
+
+.searchContainer input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    font-size: 16px;
+    background-color: inherit;
+}
+
+.main .action {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.main .action label {
+    font-size: 12px;
+}
+
+
+/* Optional: Add media query to adjust max-width for smaller screens */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+        /* Adjust for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        /* Adjust for extra small screens */
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
